@@ -6,3 +6,8 @@ sky:
     database: sky_take_out
     username: root
     password: wcw231407
+  qi-niu:
+    endpoint: http://img.wcw231407.cn/
+    access-key-id: RfAPWyXFwNHF6Z8OBQipIg_1iNIp-KJj5A-Fe5eL
+    access-key-secret: -OUMlQVUczKKAVBVp9Q5xBUIasMw1hBRdXqCFJ9B
+    bucket-name: fancydog
