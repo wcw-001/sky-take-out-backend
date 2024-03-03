@@ -40,8 +40,15 @@ sky:
     admin-ttl: 7200000
     # 设置前端传递过来的令牌名称
     admin-token-name: token
+    #设置jwt签名加密时使用的秘钥
+    user-secret-key: itheima
+    user-ttl: 7200000
+    user-token-name: authentication
   qi-niu:
     endpoint: $(sky.qiNiu.endpoint)
     access-key-id: $(accessKeyId)
     access-key-secret: $(accessKeySecret)
     bucket-name: $(bucketName)
+  wechat:
+    appid: $(sky.wechat.appid)
+    secret: $(sky.wechat.secret)

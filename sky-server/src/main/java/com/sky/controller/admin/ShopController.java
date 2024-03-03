@@ -22,7 +22,7 @@ public class ShopController {
      * @return
      */
     @PutMapping("/{status}")
-    @ApiOperation("获取店铺的营业状态")
+    @ApiOperation("设置店铺的营业状态")
     public Result setStatus(@PathVariable Integer status){
         log.info("设置店铺的营业状态为：{}",status ==1?"营业中":"打洋中");
         redisTemplate.opsForValue().set(KEY,status);
