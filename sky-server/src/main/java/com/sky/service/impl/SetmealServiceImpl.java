@@ -19,6 +19,7 @@ import com.sky.service.SetmealService;
 import com.sky.vo.DishItemVO;
 import com.sky.vo.SetmealVO;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -60,9 +61,8 @@ public class SetmealServiceImpl implements SetmealService {
         setmealDishes.forEach(setmealDish -> {
             setmealDish.setSetmealId(setmealId);
         });
-
         //保存套餐和菜品的关联关系
-        setmealDishMapper.insertBatch(setmealDishes);
+        setmealDishMapper.insertBatch( setmealDishes);
     }
 
     /**
