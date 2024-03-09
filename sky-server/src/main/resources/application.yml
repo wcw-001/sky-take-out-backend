@@ -45,10 +45,17 @@ sky:
     user-ttl: 7200000
     user-token-name: authentication
   qi-niu:
-    endpoint: $(sky.qiNiu.endpoint)
-    access-key-id: $(accessKeyId)
-    access-key-secret: $(accessKeySecret)
-    bucket-name: $(bucketName)
+    endpoint: ${sky.qiNiu.endpoint}
+    access-key-id: ${accessKeyId}
+    access-key-secret: ${accessKeySecret}
+    bucket-name: ${bucketName}
   wechat:
-    appid: $(sky.wechat.appid)
-    secret: $(sky.wechat.secret)
+    appid: ${sky.wechat.appid}
+    secret: ${sky.wechat.secret}
+    mchid: ${sky.wechat.mchid}
+    mchSerialNo: ${sky.wechat.mchSerialNo}
+    privateKeyFilePath: ${sky.wechat.privateKeyFilePath}
+    apiV3Key: ${sky.wechat.apiV3Key}
+    weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath}
+    notifyUrl: ${sky.wechat.notifyUrl}
+    refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
